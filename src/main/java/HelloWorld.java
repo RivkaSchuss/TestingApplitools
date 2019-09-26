@@ -17,6 +17,7 @@ public class HelloWorld {
         eyes.open(driver,"Jenkins/Github","Jenkins/Github");
         System.out.println("Hello World");
         eyes.checkWindow("Initial view");
+        System.out.println("hi");
         driver.quit();
         eyes.close();
 
