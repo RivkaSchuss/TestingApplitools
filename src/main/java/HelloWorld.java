@@ -11,12 +11,12 @@ public class HelloWorld {
     public static void main(String[] args) {
         Eyes eyes = new Eyes();
         eyes.setApiKey(System.getenv("APPLITOOLS_API_KEY"));
-        String batchName = null;
-        String batchId   = System.getenv("APPLITOOLS_BATCH_ID");
-
-        // set the batch
-        BatchInfo batchInfo = new BatchInfo(batchName);
-//        batchInfo.setId(batchId);
+        BatchInfo batchInfo = new BatchInfo(System.getenv("APPLITOOLS_BATCH_NAME"));
+// If the test runs via TeamCity, set the batch ID accordingly.
+        String batchId = System.getenv("APPLITOOLS_BATCH_ID");
+        if (batchId != null) {
+            batchInfo.setId(batchId);
+        }
         eyes.setBatch(batchInfo);
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");

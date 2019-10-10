@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06ea7368-6869-44f1-88ff-b56dcfe826b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloWorld.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +44,8 @@
   <component name="RunManager">
     <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="APPLITOOLS_API_KEY" value="ipnvklZBLcUmg110VwqiLxhJAdjAyrCXtekOCHaHieoZQ110" />
+        <env name="APPLITOOLS_BATCH_NAME" value="TeamCityTest" />
+        <env name="APPLITOOLS_BATCH_ID" value="" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="HelloWorld" />
       <module name="TestingGithub" />
@@ -111,7 +111,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
